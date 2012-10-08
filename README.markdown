@@ -31,6 +31,10 @@ Copyright (c) 2012 Warren Moore
 This software may be redistributed under the terms of the MIT License.
 See the file LICENSE for details.
 
+Bootstrap is licensed under the terms of the [Apache License v2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
+jQuery is license under the terms of the [MIT License](https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt).
+
 ## Contact
 
           @wamonite     - twitter
