@@ -33,7 +33,7 @@ See the file LICENSE for details.
 
 Bootstrap is licensed under the terms of the [Apache License v2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
-jQuery is license under the terms of the [MIT License](https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt).
+jQuery is licensed under the terms of the [MIT License](https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt).
 
 ## Contact
 
