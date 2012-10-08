@@ -22,7 +22,7 @@ A [Pelican]() theme using [Bootstrap]().
 
 ## Preview
 
-![relapse preview](preview.png)
+![relapse preview](https://raw.github.com/wamonite/relapse/master/preview.png)
 
 ## License
 
