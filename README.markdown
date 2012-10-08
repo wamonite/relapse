@@ -1,6 +1,6 @@
 # relapse
 
-A [Pelican]() theme using [Bootstrap]().
+A [Pelican](http://pelican.notmyidea.org) theme using [Bootstrap](http://twitter.github.com/bootstrap).
 
 [source @ github](https://github.com/wamonite/relapse)
 
@@ -22,7 +22,7 @@ A [Pelican]() theme using [Bootstrap]().
 
 ## Preview
 
-![relapse preview](https://raw.github.com/wamonite/relapse/master/preview.png)
+![Screenshot](https://raw.github.com/wamonite/relapse/master/preview.png)
 
 ## License
 
