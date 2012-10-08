@@ -24,9 +24,8 @@ A [Pelican]() theme using [Bootstrap]().
 
 Copyright (c) 2012 Warren Moore
 
-[![Creative Commons License](http://i.creativecommons.org/l/by-sa/2.0/uk/88x31.png)](http://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_US)
-
-This work is licensed under a [Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales License](http://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_US).
+This software may be redistributed under the terms of the MIT License.
+See the file LICENSE for details.
 
 ## Contact
 

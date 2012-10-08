@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+  <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <link href="{{ SITEURL }}/theme/css/bootstrap.css" rel="stylesheet" type="text/css"/>
@@ -27,6 +27,12 @@
 {% include 'github.html' %}
 
 <body>
+
+<!--
+relapse - a Pelican theme using Bootstrap 
+Copyright (c) 2012 Warren Moore
+https://github.com/wamonite/relapse
+-->
 
 <!-- Header -->
 <header><div class="container">
@@ -76,7 +82,7 @@
 </div>
 <!-- /Content -->
 
-<!--  Side bar -->
+<!-- Side bar -->
 <nav class="span3">
 
 <h2>Categories</h2>
@@ -126,7 +132,7 @@ Built using <a href="http://pelican.notmyidea.org/">Pelican</a>, the
 <!-- /Footer -->
 
 </div></div>
-<!-- Body -->
+<!-- /Body -->
 
 <script src="{{ SITEURL }}/theme/js/jquery.js"></script>
 <script src="{{ SITEURL }}/theme/js/bootstrap.js"></script>
