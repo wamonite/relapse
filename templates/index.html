@@ -25,7 +25,9 @@
       
       {{ article.summary }}
       
-      <p><a class="btn btn-mini btn-primary" href="{{ SITEURL }}/{{ article.url }}">Read more</a></p>
+      {% if article.content|length > article.summary|length %}
+        <p><a class="btn btn-mini btn-primary" href="{{ SITEURL }}/{{ article.url }}">Read more</a></p>
+      {% endif %}
       
       {% include 'article_detail.html' %}
       </article>
