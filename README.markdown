@@ -20,6 +20,10 @@ A [Pelican]() theme using [Bootstrap]().
 * Pages can be ordered by including an ``order`` page attribute (1 based index).
 * Bootstrap and jQuery included for simple installation with ``pelican-themes``.
 
+## Preview
+
+![relapse preview](preview.png)
+
 ## License
 
 Copyright (c) 2012 Warren Moore

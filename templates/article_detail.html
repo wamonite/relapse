@@ -1,5 +1,5 @@
-Posted {{ article.locale_date }}
+<detail><p>Posted {{ article.locale_date }}
 {% if article.author %} by <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>{% endif %}
 in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
 {% if PDF_PROCESSOR %}<a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">PDF</a>{% endif %}
-{% include 'tag_list.html' %}
+{% include 'tag_list.html' %}</p></detail>

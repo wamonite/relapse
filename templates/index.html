@@ -12,7 +12,7 @@
       
       {{ article.content }}
       
-      <detail>{% include 'article_detail.html' %}</detail>
+      {% include 'article_detail.html' %}
       </article>
       
       {% if loop.length == 1 and articles_page.has_next() %}
@@ -27,7 +27,7 @@
       
       <p><a class="btn btn-mini btn-primary" href="{{ SITEURL }}/{{ article.url }}">Read more</a></p>
       
-      <detail>{% include 'article_detail.html' %}</detail>
+      {% include 'article_detail.html' %}
       </article>
       
       {% if loop.last and (articles_page.has_previous() or articles_page.has_next()) %}
