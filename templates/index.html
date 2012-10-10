@@ -13,6 +13,12 @@
       {{ article.content }}
       
       {% include 'article_detail.html' %}
+      
+      {% if DISQUS_SITENAME %}
+      <aside id="comment-count">
+      <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread"></a>
+      </aside>
+      {% endif %}
       </article>
       
       {% if loop.length == 1 and articles_page.has_next() %}
@@ -30,6 +36,12 @@
       {% endif %}
       
       {% include 'article_detail.html' %}
+      
+      {% if DISQUS_SITENAME %}
+      <aside id="comment-count">
+      <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread"></a>
+      </aside>
+      {% endif %}
       </article>
       
       {% if loop.last and (articles_page.has_previous() or articles_page.has_next()) %}
