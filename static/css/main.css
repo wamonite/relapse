@@ -75,3 +75,7 @@ footer
   text-align: center;
   border-top: 1px solid #bbb;
 }
+code
+{
+  color: #333;
+}
