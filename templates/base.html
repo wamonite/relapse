@@ -35,10 +35,11 @@
   {% endif %}
 </head>
 
-{% include 'block_github.html' %}
+{% if GITHUB_URL %}
+  {% include 'block_github.html' %}
+{% endif %}
 
 <body>
-
 <!--
 relapse - a Pelican theme using Bootstrap 
 Copyright (c) 2012 Warren Moore
@@ -148,7 +149,9 @@ Built using <a href="http://pelican.notmyidea.org/">Pelican</a>, the
 <script src="{{ SITEURL }}/theme/js/jquery.js"></script>
 <script src="{{ SITEURL }}/theme/js/bootstrap.js"></script>
   
-{% include 'block_google_analytics.html' %}
+{% if GOOGLE_ANALYTICS %}
+  {% include 'block_google_analytics.html' %}
+{% endif %}
 
 </body>
 </html>

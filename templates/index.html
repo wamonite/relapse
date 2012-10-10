@@ -12,13 +12,21 @@
       
       {{ article.content }}
       
+      <detail><p>
       {% include 'block_article_detail.html' %}
+      </p></detail>
       
-      {% include 'block_disqus_count.html' %}
+      {% if DISQUS_SITENAME %}
+        <aside id="comment-count"><p>
+        {% include 'block_disqus_count.html' %}
+        </p></aside>
+      {% endif %}
       </article>
       
-      {% if loop.length == 1 and articles_page.has_next() %}
-        {% include 'block_pagination.html' %}
+      {% if DEFAULT_PAGINATION and loop.length == 1 and articles_page.has_next() %}
+        <nav class="pagination">
+          {% include 'block_pagination.html' %}
+        </nav>
       {% endif %}
       
     {% else %}
@@ -31,17 +39,24 @@
         <p><a class="btn btn-mini btn-primary" href="{{ SITEURL }}/{{ article.url }}">Read more</a></p>
       {% endif %}
       
+      <detail><p>
       {% include 'block_article_detail.html' %}
+      </p></detail>
       
-      {% include 'block_disqus_count.html' %}
+      {% if DISQUS_SITENAME %}
+        <aside id="comment-count"><p>
+        {% include 'block_disqus_count.html' %}
+        </p></aside>
+      {% endif %}
       </article>
       
-      {% if loop.last and (articles_page.has_previous() or articles_page.has_next()) %}
-        {% include 'block_pagination.html' %}
+      {% if DEFAULT_PAGINATION and loop.last and (articles_page.has_previous() or articles_page.has_next()) %}
+        <nav class="pagination">
+          {% include 'block_pagination.html' %}
+        </nav>
       {% endif %}
       
     {% endif %}
-
   {% endfor %}
 
 {% else %}

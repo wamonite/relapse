@@ -1,5 +1,3 @@
-{% if DISQUS_SITENAME %}
-<aside id="comments">
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 var disqus_shortname = '{{ DISQUS_SITENAME }}';
@@ -13,5 +11,3 @@ var disqus_title = '{{ article.title }}';
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments.</a></noscript>
-</aside>
-{% endif %}

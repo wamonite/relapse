@@ -8,8 +8,14 @@
 
 {{ article.content }}
 
+<detail><p>
 {% include 'block_article_detail.html' %}
+</p></detail>
 
-{% include 'block_disqus.html' %}
+{% if DISQUS_SITENAME %}
+<aside id="comments">
+  {% include 'block_disqus.html' %}
+</aside>
+{% endif %}
 </article>
 {% endblock content %}
