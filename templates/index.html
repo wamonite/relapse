@@ -12,17 +12,13 @@
       
       {{ article.content }}
       
-      {% include 'article_detail.html' %}
+      {% include 'block_article_detail.html' %}
       
-      {% if DISQUS_SITENAME %}
-      <aside id="comment-count">
-      <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread" data-disqus-identifier="{{ SITEURL }}/{{ article.url }}">Comments</a>
-      </aside>
-      {% endif %}
+      {% include 'block_disqus_count.html' %}
       </article>
       
       {% if loop.length == 1 and articles_page.has_next() %}
-        {% include 'pagination.html' %}
+        {% include 'block_pagination.html' %}
       {% endif %}
       
     {% else %}
@@ -35,17 +31,13 @@
         <p><a class="btn btn-mini btn-primary" href="{{ SITEURL }}/{{ article.url }}">Read more</a></p>
       {% endif %}
       
-      {% include 'article_detail.html' %}
+      {% include 'block_article_detail.html' %}
       
-      {% if DISQUS_SITENAME %}
-      <aside id="comment-count">
-      <a href="{{ SITEURL }}/{{ article.url }}#disqus_thread" data-disqus-identifier="{{ SITEURL }}/{{ article.url }}">Comments</a>
-      </aside>
-      {% endif %}
+      {% include 'block_disqus_count.html' %}
       </article>
       
       {% if loop.last and (articles_page.has_previous() or articles_page.has_next()) %}
-        {% include 'pagination.html' %}
+        {% include 'block_pagination.html' %}
       {% endif %}
       
     {% endif %}
