@@ -13,6 +13,7 @@ A [Pelican](http://pelican.notmyidea.org) theme using [Bootstrap](http://twitter
         GITHUB_POSITION
         DISPLAY_PAGES_ON_MENU
         GOOGLE_ANALYTICS
+        DISQUS_SITENAME
         LINKS
         SOCIAL
         MENUITEMS
