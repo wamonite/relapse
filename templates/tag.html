@@ -1,3 +1,9 @@
 {% extends "index.html" %}
 
-{% block title %}{{ SITENAME }} - {{ tag }}{% endblock %}
+{% block title %}{{ SITENAME }} - Tag: {{ tag }}{% endblock %}
+
+{% block content %}
+<h3 class="well well-small">Tag: {{ tag }}</h3>
+
+{{ super() }}
+{% endblock content %}
