@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 
+{% block article_link %}
+{% if articles %}
+  {% for article in articles_page.object_list %} {# TODO: find more efficient way to do this #}
+    {% if loop.first and not articles_page.has_previous() %}
+      <link href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"/>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{# TODO: add link header for pages if no articles specified #}
+
+{% endblock article_link %}
+
 {% block content %}
 {% if articles %}
 
