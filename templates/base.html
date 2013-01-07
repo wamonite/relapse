@@ -13,36 +13,23 @@
   <link href="http://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet" type="text/css"/>
   {% if FEED_RSS %}<link href="{{ SITEURL }}/{{ FEED_RSS }}" rel="alternate" type="application/atom+xml" title="{{ SITENAME }} RSS" />
   {% endif %}
-  {% block article_link %}{% endblock article_link %}
+  
+  {% block head %}{% endblock head %}
   
   <!--[if lt IE 9]>
     <script src="https://raw.github.com/aFarkas/html5shiv/master/dist/html5shiv.js"></script>
   <![endif]-->
-  
-  {% if DISQUS_SITENAME %}
-  <script type="text/javascript">
-  var disqus_shortname = '{{ DISQUS_SITENAME }}';
-
-  (function () {
-      var s = document.createElement('script'); s.async = true;
-      s.type = 'text/javascript';
-      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-  }());
-  </script>
-  {% endif %}
 </head>
 
-{% if GITHUB_URL %}
-  {% include 'block_github.html' %}
-{% endif %}
-
-<body>
 <!--
 relapse - a Pelican theme using Bootstrap 
 Copyright (c) 2012 Warren Moore
 https://github.com/wamonite/relapse
 -->
+<body>
+{% if GITHUB_URL %}
+  {% include 'block_github.html' %}
+{% endif %}
 
 <!-- Header -->
 <header><div class="container">
@@ -143,7 +130,7 @@ Built using <a href="http://pelican.notmyidea.org/">Pelican</a>, the
 </div></div>
 <!-- /Footer -->
 
-</div></div>
+</div></section>
 <!-- /Body -->
 
 <script src="{{ SITEURL }}/theme/js/jquery.js"></script>

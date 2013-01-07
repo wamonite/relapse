@@ -1,17 +1,18 @@
 {% extends "base.html" %}
 
-{% block article_link %}
+{% block head %}
 {% if articles %}
   {% for article in articles_page.object_list %} {# TODO: find more efficient way to do this #}
     {% if loop.first and not articles_page.has_previous() %}
       <link href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"/>
     {% endif %}
   {% endfor %}
+{# TODO: add link header for pages if no articles specified #}
 {% endif %}
 
-{# TODO: add link header for pages if no articles specified #}
+{% include 'block_disqus_count_header.html' %}
 
-{% endblock article_link %}
+{% endblock head %}
 
 {% block content %}
 {% if articles %}
@@ -23,9 +24,9 @@
       
       {{ article.content }}
       
-      <detail><p>
-      {% include 'block_article_detail.html' %}
-      </p></detail>
+      <p class="info">
+      {% include 'block_article_info.html' %}
+      </p>
       
       {% if DISQUS_SITENAME %}
         <aside id="comment-count"><p>
@@ -50,9 +51,9 @@
         <p><a class="btn btn-mini btn-primary" href="{{ SITEURL }}/{{ article.url }}">Read more</a></p>
       {% endif %}
       
-      <detail><p>
-      {% include 'block_article_detail.html' %}
-      </p></detail>
+      <p class="info">
+      {% include 'block_article_info.html' %}
+      </p>
       
       {% if DISQUS_SITENAME %}
         <aside id="comment-count"><p>
