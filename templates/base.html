@@ -135,7 +135,11 @@ Built using <a href="http://pelican.notmyidea.org/">Pelican</a>, the
 
 <script src="{{ SITEURL }}/theme/js/jquery.js"></script>
 <script src="{{ SITEURL }}/theme/js/bootstrap.js"></script>
-  
+
+{% if ace_editor %}
+  {{ ace_editor }}
+{% endif %}
+
 {% if GOOGLE_ANALYTICS %}
   {% include 'block_google_analytics.html' %}
 {% endif %}
