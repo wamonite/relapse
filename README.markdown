@@ -28,7 +28,7 @@ A [Pelican](http://pelican.notmyidea.org) theme using [Bootstrap](http://twitter
 
 ## License
 
-Copyright (c) 2012 Warren Moore
+Copyright (c) 2012-2016 Warren Moore
 
 This software may be redistributed under the terms of the MIT License.
 See the file LICENSE for details.
