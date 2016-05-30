@@ -63,7 +63,7 @@
       </article>
       
       {% if DEFAULT_PAGINATION and loop.last and (articles_page.has_previous() or articles_page.has_next()) %}
-        <nav class="pagination">
+        <nav class="text-center">
           {% include 'block_pagination.html' %}
         </nav>
       {% endif %}

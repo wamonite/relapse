@@ -44,6 +44,11 @@ https://github.com/wamonite/relapse
   }
 }
 
+body
+{
+  font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
+}
+
 header .container h1
 {
   margin: 10px 0 10px;
@@ -78,4 +83,5 @@ footer
 code
 {
   color: #333;
+  background-color: #eee;
 }
