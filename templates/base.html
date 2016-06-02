@@ -34,10 +34,14 @@ https://github.com/wamonite/relapse
 {% endif %}
 
 <!-- Header -->
-<header><div class="container">
-<h1 class="page-header"><a href="{{ SITEURL }}/index.html">{{ SITENAME }}</a>
-{% if SITESUBTITLE %}<small>{{ SITESUBTITLE }}</small>{% endif %}</h1>
-</div></header>
+<header>
+<div class="container">
+<h1 class="page-header"><a href="{{ SITEURL }}/index.html">{{ SITENAME }}</a></h1>
+</div>
+{% if SITESUBTITLE %}<div class="container">
+<p class="page-header">{{ SITESUBTITLE }}</p>
+</div>{% endif %}
+</header>
 <!-- /Header -->
 
 <!-- Body -->

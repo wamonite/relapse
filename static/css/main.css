@@ -12,15 +12,12 @@ https://github.com/wamonite/relapse
   header .container h1
   {
     font-family: 'Chelsea Market', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 40pt;
-    border-bottom: 0px;
+    border-bottom: 0;
     text-shadow: 2px 2px 5px #000000;
   }
   section#body
   {
-    background-image:url('/theme/images/header_shadow.png');
-    background-position: top;
-    background-repeat: repeat-x;
+    background: url('/theme/images/header_shadow.png') repeat-x top;
     padding-top: 10px;
   }
   header .container h1 a
@@ -38,9 +35,8 @@ https://github.com/wamonite/relapse
   header .container h1
   {
     font-family: 'Chelsea Market', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 34pt;
-    border-bottom: 0px;
-    text-shadow: 1px 1px 3px #000000;
+    border-bottom: 0;
+    text-shadow: 1px 1px 2px #000000;
   }
 }
 
@@ -48,13 +44,21 @@ body
 {
   font-family: "PT Serif", Georgia, "Times New Roman", Times, serif;
 }
-
+header
+{
+  padding: 10px 0 6px;
+}
 header .container h1
 {
-  margin: 10px 0 10px;
-  padding-bottom: 10px;
+  margin: 0 0 0;
 }
-a,a:hover
+header .container p
+{
+  margin: 5px 0 0;
+  border-bottom: 0;
+  color: #000;
+}
+a,a:hover,a:visited,a:active,a:link
 {
   text-decoration: none;
 }
@@ -64,7 +68,7 @@ h1,h2,h3,h4,h5,h6
 }
 section#body nav
 {
-  margin-bottom: 0px
+  margin-bottom: 0;
 }
 article .info
 {
@@ -84,4 +88,9 @@ code
 {
   color: #333;
   background-color: #eee;
+}
+.page-header
+{
+  padding-bottom: 0;
+  margin: 0 0 0;
 }
