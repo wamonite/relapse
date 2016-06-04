@@ -83,6 +83,10 @@ section#side h1
 {
   font-size: 18px;
 }
+section#side p
+{
+  text-align: center;
+}
 footer
 {
   margin-top: 20px;
