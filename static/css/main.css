@@ -73,10 +73,15 @@ section#body nav
 article .info
 {
   font-size: smaller;
+  margin-top: 2px;
 }
-nav.pagination
+section#content nav
 {
   text-align: center;
+}
+section#side h1
+{
+  font-size: 18px;
 }
 footer
 {

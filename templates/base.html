@@ -92,27 +92,28 @@ https://github.com/wamonite/relapse
 <div class="row">
 
 <!-- Content --> 
+<section id="content">
 <div class="col-md-9">
 {% block content %}
 {% endblock content %}
 </div>
+</section>
 <!-- /Content -->
 
 <!-- Side bar -->
+<section id="side">
 <div class="col-md-3">
 <nav>
 
-{% if not CATEGORY_LINKS_DISABLE %}
-<h2>Categories</h2>
+<h1>Categories</h1>
 <ul class="nav nav-pills nav-stacked">
 {% for cat, null in categories %}
   <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 {% endfor %}
 </ul>
-{% endif %}
 
 {% if LINKS %}
-<h2>Links</h2>
+<h1>Links</h1>
 <ul class="nav nav-pills nav-stacked">
 {% for name, link in LINKS %}
   <li><a href="{{ link }}">{{ name }}</a></li>
@@ -121,7 +122,7 @@ https://github.com/wamonite/relapse
 {% endif %}
 
 {% if SOCIAL %}
-<h2>Social</h2>
+<h1>Social</h1>
 <ul class="nav nav-pills nav-stacked">
   {% if FEED_ATOM %}
   <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate">Site Feed{% if FEED_RSS or not FEED_DOMAIN %} (Atom){% endif %}</a></li>
@@ -138,7 +139,7 @@ https://github.com/wamonite/relapse
 </nav>
 
 {% if SOCIAL_ICONS %}
-  {% if SOCIAL_ICONS_TITLE %}<h2>{{ SOCIAL_ICONS_TITLE }}</h2>{% endif %}
+<h1>{{ SOCIAL_ICONS_TITLE|default('Social') }}</h1>
 <p class="text-center" style="margin-top: 10px">
   {% for name, icon, link in SOCIAL_ICONS %}
     {% if link|lower == 'rss' %}
@@ -162,13 +163,13 @@ https://github.com/wamonite/relapse
 <!-- /Side bar -->
 
 </div>
-</div>
+</section>
 <!-- /Main block -->
 
 <!-- Footer -->
 <div class="row"><div class="col-md-12">
 <footer><small>
-Built using <a href="http://pelican.notmyidea.org/">Pelican</a>, the 
+Built using <a href="http://pelican.notmyidea.org/">Pelican</a>, the
 <a href="https://github.com/wamonite/relapse">relapse</a> theme and 
 <a href="http://twitter.github.com/bootstrap">Bootstrap</a>.
 </small></footer>
