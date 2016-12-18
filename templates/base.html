@@ -176,6 +176,10 @@ https://github.com/wamonite/relapse
                 {% endfor %}
               </p>
               {% endif %}
+
+              {% if TWITTER_FEED %}
+              <a class="twitter-timeline" data-height="750" data-theme="light" href="https://twitter.com/{{ TWITTER_FEED }}"></a>
+              {% endif %}
             </div>
           </section>
           <!-- /Side bar -->
@@ -207,6 +211,9 @@ https://github.com/wamonite/relapse
 
     {% if GOOGLE_ANALYTICS %}
 {% include 'block_google_analytics.html' %}
+    {% endif %}
+    {% if TWITTER_FEED %}
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     {% endif %}
   </body>
 </html>
