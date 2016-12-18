@@ -11,6 +11,8 @@
     <link href="{{ SITEURL }}/theme/css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <link href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" rel="stylesheet" type="text/css"/>
     <link href="http://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet" type="text/css"/>
+    <link href="{{ SITEURL }}/theme/css/prism.css" rel="stylesheet" type="text/css"/>
+
     {% if FEED_RSS %}
     <link href="{{ SITEURL }}/{{ FEED_RSS }}" rel="alternate" type="application/atom+xml" title="{{ SITENAME }} RSS" />
     {% endif %}
@@ -201,10 +203,7 @@ https://github.com/wamonite/relapse
 
     <script src="{{ SITEURL }}/theme/js/jquery.js"></script>
     <script src="{{ SITEURL }}/theme/js/bootstrap.js"></script>
-
-    {% if ace_editor %}
-{{ ace_editor }}
-    {% endif %}
+    <script src="{{ SITEURL }}/theme/js/prism.js"></script>
 
     {% if GOOGLE_ANALYTICS %}
 {% include 'block_google_analytics.html' %}
