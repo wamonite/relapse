@@ -20,7 +20,8 @@ A [Pelican](http://pelican.notmyidea.org) theme using [Bootstrap](http://twitter
         
 * Pages can be ordered by including an ``order`` page attribute (1 based index).
 * Add a meta tag description to the index page with ``SITEDESCRIPTION``.
-* Bootstrap and jQuery included for simple installation with ``pelican-themes``.
+* Bootstrap, jQuery and Prism.,js included for simple installation with ``pelican-themes``.
+* [Prism.js options](http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+bash+c+cpp+ruby+docker+git+http+json+lua+makefile+markdown+nginx+processing+python+rest+sql+vim+yaml&plugins=line-numbers+file-highlight+toolbar+show-language)
 
 ## Preview
 
@@ -36,6 +37,8 @@ See the file LICENSE for details.
 Bootstrap is licensed under the terms of the [Apache License v2.0](https://www.apache.org/licenses/LICENSE-2.0).
 
 jQuery is licensed under the terms of the [MIT License](https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt).
+
+Prism.js is licensed under the terms of the [MIT License](https://github.com/PrismJS/prism/blob/master/LICENSE).
 
 ## Contact
 
