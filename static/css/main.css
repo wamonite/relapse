@@ -83,6 +83,10 @@ section#side h1
 {
   font-size: 18px;
 }
+section#side h1.bio
+{
+  border-bottom: none;
+}
 section#side p
 {
   text-align: center;
