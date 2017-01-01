@@ -12,6 +12,17 @@
 {% include 'block_article_info.html' %}
 </p>
 
+{% if article.photo_gallery %}
+<div class="gallery">
+        {% for title, gallery in article.photo_gallery %}
+            <h1>{{ title }}</h1>
+                {% for name, photo, thumb, exif, caption in gallery %}
+                        <a href="{{ SITEURL }}/{{ photo }}" title="{{ name }}" exif="{{ exif }}" caption="{{ caption }}"><img src="{{ SITEURL }}/{{ thumb }}"></a>
+                {% endfor %}
+        {% endfor %}
+</div>
+{% endif %}
+
 {% if DISQUS_SITENAME %}
 <aside id="comments">
   {% include 'block_disqus.html' %}
