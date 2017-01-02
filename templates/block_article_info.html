@@ -1,4 +1,4 @@
-Posted {{ article.locale_date }}
+Posted {{ article.locale_date }}{% if article.modified %}, last updated {{ article.modified.strftime(DEFAULT_DATE_FORMAT) }}{% endif %}
 {% if not ARTICLE_HIDE_AUTHOR and article.author %} by <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a> {% endif %}
-{% if not ARTICLE_HIDE_CATEGORIES %}in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> {% endif %}
+{% if not ARTICLE_HIDE_CATEGORIES %} in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> {% endif %}
 {% if not ARTICLE_HIDE_TAGS and article.tags %}({% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if loop.length > 1 and not loop.last %}, {% endif %}{% endfor %}){% endif %}
