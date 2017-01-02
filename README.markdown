@@ -40,7 +40,7 @@ jQuery is licensed under the terms of the [MIT License](https://github.com/jquer
 
 Prism.js is licensed under the terms of the [MIT License](https://github.com/PrismJS/prism/blob/master/LICENSE).
 
-Lightbox is licesned under the terms of the MIT License](https://github.com/lokesh/lightbox2/blob/master/LICENSE).
+Lightbox is licensed under the terms of the [MIT License](https://github.com/lokesh/lightbox2/blob/master/LICENSE).
 
 ## Contact
 
