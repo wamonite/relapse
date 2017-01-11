@@ -1,17 +1,7 @@
 {% extends "base.html" %}
 
 {% block head %}
-{% if articles %}
-  {% for article in articles_page.object_list %} {# TODO: find more efficient way to do this #}
-    {% if loop.first and not articles_page.has_previous() %}
-      <link href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"/>
-    {% endif %}
-  {% endfor %}
-{# TODO: add link header for pages if no articles specified #}
-{% endif %}
-
 {% include 'block_disqus_count_header.html' %}
-
 {% endblock head %}
 
 {% block content %}
