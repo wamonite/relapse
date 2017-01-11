@@ -156,7 +156,6 @@ https://github.com/wamonite/relapse
               {% if SOCIAL_ICONS %}
               <!-- Social icons -->
               {% if SOCIAL_ICONS_HIDE_TITLE %}<hr>{% else %}<h1>{{ SOCIAL_ICONS_TITLE|default('Social') }}</h1>{% endif %}
-              <!--<p class="text-center" style="margin-top: 10px">-->
               <p>
                 {% for name, icon, link in SOCIAL_ICONS %}
                   {% if link|lower == 'rss' %}
