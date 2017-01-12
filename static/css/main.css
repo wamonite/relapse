@@ -120,12 +120,12 @@ footer
   background-color: #337ab7;
   transition: none;
 }
-table.gallery
+article table
 {
   border: 0;
   width: 100%;
 }
-table.gallery td
+article table th, article table td
 {
   border: 0;
   padding: 2px;
