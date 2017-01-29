@@ -17,7 +17,6 @@ https://github.com/wamonite/relapse
   }
   section#body
   {
-    background: url('/theme/images/header_shadow.png') repeat-x top;
     padding-top: 10px;
   }
   header .container h1 a
@@ -46,7 +45,7 @@ body
 }
 header
 {
-  padding: 10px 0 6px;
+  padding: 10px 0 10px;
 }
 header .container h1
 {
