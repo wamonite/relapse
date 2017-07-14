@@ -112,6 +112,9 @@ https://github.com/wamonite/relapse
                   {% for page_iter in pages if not page_iter.order %}
                 <li {% if page_iter == page %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ page_iter.url }}">{{ page_iter.title }}</a></li>
                   {% endfor %}
+                    {% if ARCHIVE_PAGE == True %}
+                      <li {% if page_iter == page %}class="active"{% endif %}><a href="{{ SITEURL }}/archives.html">Archive</a></li>
+                    {% endif %}
                 {% endif %}
 
                 {% for title, link in MENUITEMS %}
