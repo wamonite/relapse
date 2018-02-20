@@ -3,7 +3,7 @@
     {% if articles_page.previous_page_number() == 1 %}
       <li><a href="{{ SITEURL }}/{{ page_name }}.html" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
     {% else %}
-      <li><a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html" aria-label="Previous">><span aria-hidden="true">&laquo;</span></a></li>
+      <li><a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
     {% endif %}
   {% else %}
     <li class="disabled"><span>&laquo;</span></li>
