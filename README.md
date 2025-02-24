@@ -12,7 +12,6 @@ A [Pelican](http://pelican.notmyidea.org) theme using [Bootstrap 3](http://twitt
         GITHUB_URL
         GITHUB_POSITION
         DISPLAY_PAGES_ON_MENU
-        GOOGLE_ANALYTICS
         DISQUS_SITENAME
         LINKS
         SOCIAL
