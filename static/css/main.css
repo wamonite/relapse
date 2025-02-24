@@ -1,6 +1,6 @@
 /*
 relapse - a Pelican theme using Bootstrap 
-Copyright (c) 2012-2016 Warren Moore
+Copyright (c) 2012-2025 Warren Moore
 https://github.com/wamonite/relapse
 */
 @media screen and (min-width: 767px)
@@ -128,4 +128,7 @@ article table th, article table td
 {
   border: 0;
   padding: 2px;
+}
+.github-fork-ribbon.left-top:before, .github-fork-ribbon.right-top:before {
+  background-color: #333;
 }
