@@ -29,7 +29,7 @@ A [Pelican](http://pelican.notmyidea.org) theme using [Bootstrap](http://twitter
 
 ## License
 
-Copyright (c) 2012-2016 Warren Moore
+Copyright (c) 2012-2025 Warren Moore
 
 This software may be redistributed under the terms of the MIT License.
 See the file LICENSE for details.
@@ -44,6 +44,6 @@ Lightbox is licensed under the terms of the [MIT License](https://github.com/lok
 
 ## Contact
 
-          @wamonite     - twitter
-           \_______.com - web
-    warren____________/ - email
+          @wamonite@mastodon.me.uk - toots
+           \_______.com            - blogs
+    warren____________/            - email
