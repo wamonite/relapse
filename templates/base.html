@@ -208,10 +208,6 @@ https://github.com/wamonite/relapse
                 {% endfor %}
               </p>
               {% endif %}
-
-              {% if TWITTER_FEED %}
-              <a class="twitter-timeline" data-height="750" data-theme="light" href="https://twitter.com/{{ TWITTER_FEED }}"></a>
-              {% endif %}
             </div>
           </section>
           <!-- /Side bar -->
@@ -226,7 +222,7 @@ https://github.com/wamonite/relapse
               <small>
                 Built using <a href="http://pelican.notmyidea.org/">Pelican</a>, the
                 <a href="https://github.com/wamonite/relapse">relapse</a> theme and
-                <a href="http://twitter.github.com/bootstrap">Bootstrap</a>.
+                <a href="https://getbootstrap.com/docs/3.4/">Bootstrap 3</a>.
               </small>
             </footer>
           </div>
@@ -241,9 +237,5 @@ https://github.com/wamonite/relapse
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.5/dist/js/lightbox.min.js"></script>
     <script src="{{ SITEURL }}/theme/js/prism.js"></script>
-
-    {% if TWITTER_FEED %}
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    {% endif %}
   </body>
 </html>
