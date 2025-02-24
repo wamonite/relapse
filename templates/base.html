@@ -9,11 +9,11 @@
     <meta name="description" content="{{ SITEDESCRIPTION }}" />
     {% endif %}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" rel="stylesheet" type="text/css"/>
-    <link href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet" type="text/css"/>
-    <link href="{{ SITEURL }}/theme/css/prism.css" rel="stylesheet" type="text/css"/>
-    <link href="{{ SITEURL }}/theme/css/lightbox.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.5/dist/css/lightbox.min.css" rel="stylesheet" type="text/css"/>
     <link href="https://cdn.jsdelivr.net/npm/github-fork-ribbon-css@0.2.3/gh-fork-ribbon.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet" type="text/css"/>
+    <link href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ SITEURL }}/theme/css/prism.css" rel="stylesheet" type="text/css"/>
 
     {% if FEED_RSS %}
     <link href="{{ SITEURL }}/{{ FEED_RSS }}" rel="alternate" type="application/atom+xml" title="{{ SITENAME }} RSS" />
@@ -239,8 +239,8 @@ https://github.com/wamonite/relapse
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.5/dist/js/lightbox.min.js"></script>
     <script src="{{ SITEURL }}/theme/js/prism.js"></script>
-    <script src="{{ SITEURL }}/theme/js/lightbox.js"></script>
 
     {% if GOOGLE_ANALYTICS %}
 {% include 'block_google_analytics.html' %}
