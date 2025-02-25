@@ -1,6 +1,6 @@
 # relapse
 
-A [Pelican](http://pelican.notmyidea.org) theme using [Bootstrap 3](https://getbootstrap.com/docs/3.4/).
+A [Pelican](https://getpelican.com) theme using [Bootstrap 3](https://getbootstrap.com/docs/3.4/).
 
 [source @ github](https://github.com/wamonite/relapse)
 
@@ -29,12 +29,12 @@ A [Pelican](http://pelican.notmyidea.org) theme using [Bootstrap 3](https://getb
 
 ## License
 
-Copyright (c) 2012-2025 Warren Moore
+Copyright © 2012-2025 Warren Moore
 
 This software may be redistributed under the terms of the MIT License.
 See the file LICENSE for details.
 
-Prism.js is licensed under the terms of the [MIT License](https://github.com/PrismJS/prism/blob/master/LICENSE).
+[Prism.js](http://prismjs.com/) is licensed under the terms of the [MIT License](https://github.com/PrismJS/prism/blob/master/LICENSE).
 
 ## Contact
 
