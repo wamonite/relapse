@@ -14,7 +14,7 @@
     <meta property="og:description" content="{% block og_description %}{{ SITENAME }}{% endblock og_description %}">
     <meta property="og:url" content="{% block og_url %}{{ SITEURL }}{% endblock og_url %}">
     {% if SITEPREVIEWIMAGE %}
-    <meta property="og:image" content="{% block og_image %}{{ SITEURL }}/{{ SITEPREVIEWIMAGE }}{% endblock og_image %}">
+    <meta property="og:image" content="{{ SITEURL }}/{% block og_image %}{{ SITEPREVIEWIMAGE }}{% endblock og_image %}">
     {% endif %}
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet" type="text/css"/>

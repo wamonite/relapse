@@ -5,9 +5,7 @@
 {% block og_title %}{{ article.title }} - {{ SITENAME }}{% endblock %}
 {% block og_description %}{{ article.title }}{% endblock %}
 {% block og_url %}{{ SITEURL }}/{{ article.url }}{% endblock %}
-{% if article.previewimage %}
-{% block og_image %}{{ SITEURL }}/{{ article.previewimage }}{% endblock %}
-{% endif %}
+{% block og_image %}{% if article.previewimage %}{{ article.previewimage }}{% else %}{{ SITEPREVIEWIMAGE }}{% endif %}{% endblock %}
 
 {% block content %}
 <article>
