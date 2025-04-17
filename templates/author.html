@@ -2,6 +2,10 @@
 
 {% block title %}Author: {{ author }} - {{ SITENAME }}{% endblock %}
 
+{% block og_title %}Author: {{ author }} - {{ SITENAME }}{% endblock %}
+{% block og_description %}Author: {{ author }}{% endblock %}
+{% block og_url %}{{ SITEURL }}/{{ author.url }}{% endblock %}
+
 {% block content %}
 <h3 class="well well-small">Author: {{ author }}</h3>
 

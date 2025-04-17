@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Authors - {{ SITENAME }}{% endblock %}
+
+{% block og_title %}Authors - {{ SITENAME }}{% endblock %}
+{% block og_description %}Authors{% endblock %}
+{% block og_url %}{{ SITEURL }}/authors.html{% endblock %}
+
+{% block content %}
+<h1>Authors</h1>
+<ul class="nav nav-pills nav-stacked">
+{% for author, article in authors %}
+  <li><a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a></li>
+{% endfor %}
+</ul>
+{% endblock content %}

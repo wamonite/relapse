@@ -2,6 +2,13 @@
 
 {% block title %}{{ page.title }} - {{ SITENAME }}{% endblock %}
 
+{% block og_title %}{{ page.title }} - {{ SITENAME }}{% endblock %}
+{% block og_description %}{{ page.title }}{% endblock %}
+{% block og_url %}{{ SITEURL }}/{{ page.url }}{% endblock %}
+{% if page.previewimage %}
+{% block og_image %}{{ SITEURL }}/{{ page.previewimage }}{% endblock %}
+{% endif %}
+
 {% block content %}
 <h1>{{ page.title }}</h1>
 

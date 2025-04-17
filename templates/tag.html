@@ -2,6 +2,10 @@
 
 {% block title %}Tag: {{ tag }} - {{ SITENAME }}{% endblock %}
 
+{% block og_title %}Tag: {{ tag }} - {{ SITENAME }}{% endblock %}
+{% block og_description %}Tag: {{ tag }}{% endblock %}
+{% block og_url %}{{ SITEURL }}/{{ tag.url }}{% endblock %}
+
 {% block content %}
 <h3 class="well well-small">Tag: {{ tag }}</h3>
 
