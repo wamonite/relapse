@@ -13,7 +13,7 @@
     {% endif %}
     <meta property="og:type" content="{% block og_type %}website{% endblock og_type %}">
     <meta property="og:url" content="{% block og_url %}{{ SITEURL }}{% endblock og_url %}">
-	<meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="{{ SITEURL | replace('https://', '') | replace('http://', '') }}">
     <meta property="twitter:url" content="{{ self.og_url() }}">
     <meta name="twitter:title" content="{{ self.title() }}">
