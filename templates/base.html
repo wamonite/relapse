@@ -155,7 +155,7 @@ https://github.com/wamonite/relapse
                 <!-- Bio -->
                 {% if BIO %}
                 <h1 class='bio text-center'>{{ BIO_TITLE|default('About') }}</h1>
-                {% if BIO_GRAVATAR_HASH %}<p><img src='https://secure.gravatar.com/avatar/{{ BIO_GRAVATAR_HASH }}?s=150&d=identicon' class='center-block img-circle'></p>{% endif %}
+                {% if BIO_GRAVATAR_HASH %}<p><img src='https://secure.gravatar.com/avatar/{{ BIO_GRAVATAR_HASH }}?s=150&d=identicon' class='center-block img-circle' alt='Gravatar image'></p>{% endif %}
                 <p>{{ BIO }}</p>
                 {% endif %}
                 {% if not HIDE_CATEGORIES %}
