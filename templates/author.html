@@ -1,10 +1,10 @@
 {% extends "index.html" %}
 
-{% block title %}Author: {{ author }} - {{ SITENAME }}{% endblock %}
+{% block title %}Author: {{ author }} - {{ SITENAME }}{% endblock title %}
 
-{% block og_title %}Author: {{ author }} - {{ SITENAME }}{% endblock %}
-{% block og_description %}Author: {{ author }}{% endblock %}
-{% block og_url %}{{ SITEURL }}/{{ author.url }}{% endblock %}
+{% block og_title %}Author: {{ author }} - {{ SITENAME }}{% endblock og_title %}
+{% block og_description %}Author: {{ author }}{% endblock og_description %}
+{% block og_url %}{{ SITEURL }}/{{ author.url }}{% endblock og_url %}
 
 {% block content %}
 <h3 class="well well-small">Author: {{ author }}</h3>

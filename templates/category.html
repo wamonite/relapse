@@ -1,10 +1,10 @@
 {% extends "index.html" %}
 
-{% block title %}Category: {{ category }} - {{ SITENAME }}{% endblock %}
+{% block title %}Category: {{ category }} - {{ SITENAME }}{% endblock title %}
 
-{% block og_title %}Category: {{ category }} - {{ SITENAME }}{% endblock %}
-{% block og_description %}Category: {{ category }}{% endblock %}
-{% block og_url %}{{ SITEURL }}/{{ category.url }}{% endblock %}
+{% block og_title %}Category: {{ category }} - {{ SITENAME }}{% endblock og_title %}
+{% block og_description %}Category: {{ category }}{% endblock og_description %}
+{% block og_url %}{{ SITEURL }}/{{ category.url }}{% endblock og_url %}
 
 {% block content %}
 <h3 class="well well-small">Category: {{ category }}</h3>
