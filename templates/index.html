@@ -1,9 +1,5 @@
 {% extends "base.html" %}
 
-{% block head %}
-{% include 'block_disqus_count_header.html' %}
-{% endblock head %}
-
 {% block content %}
 {% if articles %}
 
@@ -77,3 +73,9 @@
 
 {% endif %}
 {% endblock content %}
+
+{% if DISQUS_SITENAME %}
+{% block foot %}
+{% include 'block_disqus_count_script.html' %}
+{% endblock foot %}
+{% endif %}
