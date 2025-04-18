@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
 {% block title %}{{ article.title }} - {{ SITENAME }}{% endblock title %}
-
-{% block og_title %}{{ article.title }} - {{ SITENAME }}{% endblock og_title %}
 {% block og_description %}{{ article.title }}{% endblock og_description %}
 {% block og_url %}{{ SITEURL }}/{{ article.url }}{% endblock og_url %}
 {% block og_image %}{% if article.previewimage %}{{ article.previewimage }}{% else %}{{ SITEPREVIEWIMAGE }}{% endif %}{% endblock og_image %}
